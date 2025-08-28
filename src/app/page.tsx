@@ -11,9 +11,6 @@ export default function Page() {
           <div className="h-8 w-8 rounded bg-indigo-600" aria-hidden />
           <span className="font-semibold">Accruwise</span>
         </div>
-        <a href="#contact" className="text-sm text-indigo-700 hover:underline">
-          Contact
-        </a>
       </header>
 
       <section className="mt-16">
@@ -25,14 +22,6 @@ export default function Page() {
           Bookkeeping and tax support for Etsy, eBay, and marketplace sellers.
         </p>
         <p className="mt-3 text-gray-700">{DESC}</p>
-        <div className="mt-8">
-          <a
-            href="#contact"
-            className="rounded bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
-          >
-            Get in touch
-          </a>
-        </div>
       </section>
 
       <section id="contact" className="mt-20 rounded-lg border p-6">
