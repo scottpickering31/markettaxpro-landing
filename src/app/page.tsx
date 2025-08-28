@@ -43,7 +43,7 @@ export default function Page() {
             className="text-indigo-700 underline"
             href="mailto:hello@accruwise.com"
           >
-            hello@accruwise.com
+            scottpickering31@gmail.com
           </a>
         </p>
         <p className="mt-1 text-gray-600">
