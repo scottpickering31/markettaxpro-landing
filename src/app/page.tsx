@@ -16,7 +16,7 @@ export default function Page() {
       <section className="mt-16">
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
           Bookkeeping & tax support for{" "}
-          <span className="text-indigo-600">Etsy</span> sellers
+          <span className="text-indigo-600">Etsy & Ebay</span> sellers
         </h1>
         <p className="mt-4 text-lg text-gray-600">
           Bookkeeping and tax support for Etsy, eBay, and marketplace sellers.
