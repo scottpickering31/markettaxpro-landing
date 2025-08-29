@@ -8,9 +8,9 @@ export default function Terms() {
         provided “as is” without warranty. Contact{" "}
         <a
           className="text-indigo-700 underline"
-          href="mailto:hello@accruwise.com"
+          href="mailto:scottpickering31@gmail.com"
         >
-          hello@accruwise.com
+          scottpickering31@gmail.com
         </a>
         .
       </p>

@@ -8,9 +8,9 @@ export default function Privacy() {
         list, or modify your shop. For access or deletion, email{" "}
         <a
           className="text-indigo-700 underline"
-          href="mailto:hello@accruwise.com"
+          href="mailto:scottpickering31@gmail.com"
         >
-          hello@accruwise.com
+          scottpickering31@gmail.com
         </a>
         .
       </p>
