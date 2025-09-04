@@ -1,24 +1,19 @@
 import React from "react";
 import { NavMenu } from "@/components/local/NavMenu";
+import Image from "next/image";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
-interface HeaderProps {
-  /**
-   * Optional content rendered on the left side of the header.
-   * This can be a logo or any React node.
-   */
-  children?: React.ReactNode;
-}
-
-/**
- * Displays the global navigation for the site. The component accepts
- * optional children which are placed to the left of the navigation menu,
- * allowing consumers to easily inject a logo or other custom content.
- */
-export default function Header({ children }: HeaderProps) {
+export default function Header() {
   return (
     <header className="flex items-center justify-between p-4">
-      {children}
+      <Link href="/">
+        <Image src="/logo.png" alt="logo" width={120} height={120} />
+      </Link>
       <NavMenu />
+      <Button variant="default" className="px-6 h-12">
+        Launch App
+      </Button>
     </header>
   );
 }

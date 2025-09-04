@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const navItems = [
+  { href: "/", label: "Home" },
   { href: "/features", label: "Features" },
   { href: "/pricing", label: "Pricing" },
   { href: "/faq", label: "FAQ" },
