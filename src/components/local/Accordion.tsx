@@ -1,6 +1,6 @@
 // components/Accordion/AccordionFull.tsx
 import * as React from "react";
-import { cn } from "@/lib/utils"; // if you use shadcn's cn helper
+import { cn } from "@/lib/utils";
 import {
   Accordion,
   AccordionContent,
@@ -9,52 +9,56 @@ import {
 } from "@/components/ui/accordion";
 
 export type AccordionItemData = {
-  /** Must be unique per item */
   value: string;
-  /** Trigger text or custom React node */
   title: React.ReactNode;
-  /** Content can be text or rich JSX */
   content: React.ReactNode;
-  /** Optional classNames per-item */
   className?: string;
 };
 
-type AccordionFullProps = {
+type BaseProps = {
   items: AccordionItemData[];
-  /** "single" (default) or "multiple" */
-  type?: "single" | "multiple";
-  /** Only for type="single" */
-  collapsible?: boolean;
-  /** Initial open item(s). For single: string; for multiple: string[] */
-  defaultValue?: string | string[];
-  /** Controlled open value(s). Leave undefined for uncontrolled */
-  value?: string | string[];
-  /** onValueChange passthrough (for analytics, etc.) */
-  onValueChange?: (val: string | string[]) => void;
-  /** Wrapper className */
   className?: string;
-  /** Content class applied to every AccordionContent */
   contentClassName?: string;
 };
 
-export function AccordionFull({
-  items,
-  type = "single",
-  collapsible = true,
-  defaultValue,
-  value,
-  onValueChange,
-  className,
-  contentClassName,
-}: AccordionFullProps) {
+type SingleProps = BaseProps & {
+  type?: "single"; // default
+  collapsible?: boolean;
+  defaultValue?: string;
+  value?: string;
+  onValueChange?: (val: string) => void;
+};
+
+type MultipleProps = BaseProps & {
+  type: "multiple";
+  // collapsible is not valid for multiple
+  defaultValue?: string[];
+  value?: string[];
+  onValueChange?: (val: string[]) => void;
+};
+
+export type AccordionFullProps = SingleProps | MultipleProps;
+
+export function AccordionFull(props: AccordionFullProps) {
+  const { items, className, contentClassName } = props;
+
   return (
     <Accordion
-      type={type}
-      collapsible={collapsible}
-      defaultValue={defaultValue as any}
-      value={value as any}
-      onValueChange={onValueChange as any}
       className={cn("w-full", className)}
+      {...(props.type === "multiple"
+        ? {
+            type: "multiple" as const,
+            value: props.value,
+            defaultValue: props.defaultValue,
+            onValueChange: props.onValueChange,
+          }
+        : {
+            type: "single" as const,
+            collapsible: props.collapsible ?? true,
+            value: props.value,
+            defaultValue: props.defaultValue,
+            onValueChange: props.onValueChange,
+          })}
     >
       {items.map(({ value, title, content, className }) => (
         <AccordionItem key={value} value={value} className={className}>
@@ -62,10 +66,7 @@ export function AccordionFull({
             {title}
           </AccordionTrigger>
           <AccordionContent
-            className={cn(
-              "flex flex-col gap-4 cursor-pointer mr-4",
-              contentClassName
-            )}
+            className={cn("flex flex-col gap-4 mr-4", contentClassName)}
           >
             {content}
           </AccordionContent>

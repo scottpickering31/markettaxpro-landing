@@ -120,10 +120,10 @@ export default function Page() {
 
         <div className="mt-8 flex items-center justify-center gap-3">
           <Button className="px-6 h-12">
-            <a href="/">Get Started Free</a>
+            <Link href="/">Get Started Free</Link>
           </Button>
           <Button variant="outline" className="px-6 h-12" asChild>
-            <a href="/features">Learn More</a>
+            <Link href="/features">Learn More</Link>
           </Button>
         </div>
         <p className="mt-6 text-xs text-gray-500">
