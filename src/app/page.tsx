@@ -61,7 +61,7 @@ const testimonials = [
   },
   {
     quote:
-      "Accruwise took the stress out of tracking my expenses. I can finally focus on growing my shop instead of spreadsheets.",
+      "MarketTaxPro took the stress out of tracking my expenses. I can finally focus on growing my shop instead of spreadsheets.",
     author: "Ella Richards, Vinted seller",
     headshot: "/ella-richards.png",
   },

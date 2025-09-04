@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Accruwise — Bookkeeping for marketplace sellers",
+  title: "MarketTaxPro — Bookkeeping for marketplace sellers",
   description:
     "Bookkeeping and tax support for Etsy, eBay, and marketplace sellers.",
 };

@@ -13,7 +13,7 @@ export default function Footer({ children }: FooterProps) {
   return (
     <footer className="border-t py-6 text-center text-sm text-muted-foreground">
       {children ?? (
-        <p>&copy; {new Date().getFullYear()} Accruwise. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} MarketTaxPro. All rights reserved.</p>
       )}
     </footer>
   );

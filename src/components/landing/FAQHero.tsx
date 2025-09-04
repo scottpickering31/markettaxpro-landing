@@ -9,7 +9,7 @@ const faqs = [
     a: "Etsy and eBay sync live; Vinted and Depop import via CSV. We’re exploring additional integrations (e.g., Shopify, Amazon, TikTok Shop) based on demand—no hard dates yet, but you can start today with the supported flows.",
   },
   {
-    q: "How often does Accruwise sync my sales and fees?",
+    q: "How often does MarketTaxPro sync my sales and fees?",
     a: "For live integrations (Etsy/eBay), new activity is pulled regularly and appears shortly after it’s available via the marketplace APIs. CSV imports (Vinted/Depop) update instantly when you upload a new file.",
   },
   {
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Is my data secure?",
-    a: "Yes. Where available we connect via official OAuth flows with read-only permissions, so we never see your marketplace passwords. Data is encrypted in transit and at rest, and you can disconnect any integration at any time from within your marketplace account or Accruwise.",
+    a: "Yes. Where available we connect via official OAuth flows with read-only permissions, so we never see your marketplace passwords. Data is encrypted in transit and at rest, and you can disconnect any integration at any time from within your marketplace account or MarketTaxPro.",
   },
   {
     q: "What if I go over 100 transactions on the free plan?",
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Do you file my tax return?",
-    a: "No. Accruwise doesn’t submit returns to HMRC. We prepare clean, audit-ready figures (income, expenses, fees, shipping, and profit) and let you export them to CSV or PDF, so you can file confidently yourself or share them with an associate.",
+    a: "No. MarketTaxPro doesn’t submit returns to HMRC. We prepare clean, audit-ready figures (income, expenses, fees, shipping, and profit) and let you export them to CSV or PDF, so you can file confidently yourself or share them with an associate.",
   },
   {
     q: "Can I import past transactions and migrate existing data?",
