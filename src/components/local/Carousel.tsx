@@ -11,7 +11,7 @@ const items = [
   { src: "/not-on-the-high-street-600.png", alt: "Not on the high street" },
 ];
 
-export default function MarketplaceMarquee({
+export default function Carousel({
   height = 100,
   speed = 40,
   pauseOnHover = true,
