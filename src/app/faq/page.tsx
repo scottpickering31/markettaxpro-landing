@@ -79,9 +79,10 @@ export default function FAQPage() {
         <div className="rounded-2xl border bg-white p-8 shadow-sm">
           <h3 className="text-xl font-semibold">Still have questions?</h3>
           <p className="mx-auto mt-2 max-w-2xl text-gray-600">
-            Reach out to our team — we're here to help you every step of the
-            way.
+            Reach out to our team — we&apos;re here to help you every step of
+            the way.
           </p>
+
           <div className="mt-6 flex items-center justify-center gap-3">
             <Button variant="outline" className="px-6 h-12">
               Contact Support

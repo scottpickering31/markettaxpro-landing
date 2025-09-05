@@ -20,7 +20,8 @@ export default function ContactPage() {
           </span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
-          Have questions, feedback, or need support? We'd love to hear from you.
+          Have questions, feedback, or need support? We&apos;d love to hear from
+          you.
         </p>
       </section>
 
