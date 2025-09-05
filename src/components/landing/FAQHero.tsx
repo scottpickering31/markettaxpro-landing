@@ -2,6 +2,7 @@
 
 import React from "react";
 import { AccordionFull } from "../local/Accordion";
+import { BlueGradient } from "@/styles/blue-gradient";
 
 const faqs = [
   {
@@ -41,7 +42,9 @@ const faqs = [
 export default function FAQHero() {
   return (
     <div className="mx-auto max-w-3xl py-12">
-      <h2 className="text-3xl font-bold mb-6 text-center">
+      <h2
+        className={`text-3xl font-bold mb-6 text-center underline underline-offset-4 ${BlueGradient}`}
+      >
         Frequently Asked Questions
       </h2>
       <AccordionFull

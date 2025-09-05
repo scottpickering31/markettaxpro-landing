@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Carousel from "@/components/local/Carousel";
 import ParallaxPlaceholder from "@/components/landing/ParallaxPlaceholder";
+import { BlueGradient } from "@/styles/blue-gradient";
 
 const features = [
   {
@@ -78,19 +79,21 @@ export default function Page() {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Header />
       <ParallaxPlaceholder
+        image="/mountains-600x600.jpg"
         side="left"
-        width={300}
-        height={300}
+        width={250}
+        height={250}
         top={260}
-        speed={0.2}
+        speed={0.7}
         rotation={30}
       />
       <ParallaxPlaceholder
+        image="/space-600x600.jpg"
         side="right"
-        width={300}
-        height={300}
+        width={250}
+        height={250}
         top={200}
-        speed={0.3}
+        speed={0.7}
         rotation={-25}
       />
       {/* Hero */}
@@ -145,9 +148,7 @@ export default function Page() {
         <h2 className="text-center text-4xl">
           Everything you need,{" "}
           <span
-            className="font-bold underline underline-offset-2  decoration-blue-600 
-               bg-gradient-to-r from-blue-500 via-blue-600 to-blue-800 
-               bg-clip-text text-transparent mt-6"
+            className={`font-bold underline underline-offset-2 mt-6 ${BlueGradient}`}
           >
             nothing you don’t
           </span>
@@ -179,7 +180,12 @@ export default function Page() {
       {/* Testimonials */}
       <section className="mx-auto max-w-6xl px-6 py-14 relative z-10">
         <h2 className="text-center text-2xl font-semibold">
-          Trusted by marketplace sellers
+          Trusted by{" "}
+          <span
+            className={`${BlueGradient} font-bold underline underline-offset-2`}
+          >
+            Marketplace Sellers
+          </span>
         </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
           {testimonials.map((t, i) => (
@@ -189,7 +195,7 @@ export default function Page() {
             >
               <p className="text-gray-800 p-4">“{t.quote}”</p>
               <div className="flex flex-row gap-4 items-center justify-evenly">
-                <div className="relative h-34 w-34 overflow-hidden rounded-full">
+                <div className="relative h-34 w-34 overflow-hidden rounded-full hover:scale-105 cursor-pointer">
                   <Image src={t.headshot} alt={`${t.author} headshot`} fill />
                 </div>
 
