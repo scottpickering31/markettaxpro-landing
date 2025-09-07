@@ -11,7 +11,11 @@ export default function Header() {
         <Image src="/logo.png" alt="logo" width={120} height={120} />
       </Link>
       <NavMenu />
-      <Link href="https://app.markettaxpro.com/">
+      <Link
+        href="https://app.markettaxpro.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Button variant="default" className="px-6 h-12">
           Launch App
         </Button>

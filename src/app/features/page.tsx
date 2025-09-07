@@ -79,7 +79,13 @@ export default function Page() {
         </p>
         <div className="mt-8 flex items-center justify-center gap-3">
           <Button className="px-6 h-12" asChild>
-            <Link href="https://app.markettaxpro.com/">Start Free</Link>
+            <Link
+              href="https://app.markettaxpro.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Start Free
+            </Link>
           </Button>
           <Button variant="outline" className="px-6 h-12" asChild>
             <Link href="#automations">See what’s inside</Link>
@@ -219,7 +225,13 @@ export default function Page() {
           </p>
           <div className="mt-6 flex items-center justify-center gap-3">
             <Button className="px-6 h-12" asChild>
-              <Link href="https://app.markettaxpro.com/">Get Started Free</Link>
+              <Link
+                href="https://app.markettaxpro.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get Started Free
+              </Link>
             </Button>
             <Button variant="outline" className="px-6 h-12" asChild>
               <Link href="/pricing">View Pricing</Link>
