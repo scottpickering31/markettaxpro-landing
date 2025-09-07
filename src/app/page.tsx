@@ -81,19 +81,19 @@ export default function Page() {
       <ParallaxPlaceholder
         image="/mountains-600x600.jpg"
         side="left"
-        width={250}
-        height={250}
+        width={270}
+        height={270}
         top={260}
-        speed={0.7}
+        speed={2}
         rotation={30}
       />
       <ParallaxPlaceholder
         image="/space-600x600.jpg"
         side="right"
-        width={250}
-        height={250}
+        width={270}
+        height={270}
         top={200}
-        speed={0.7}
+        speed={2}
         rotation={-25}
       />
       {/* Hero */}

@@ -69,7 +69,7 @@ export default function ParallaxPlaceholder({
     <div
       ref={ref}
       aria-hidden
-      className={`pointer-events-none fixed p-3 bg-amber-200/50 rounded-4xl transform-gpu ${
+      className={`pointer-events-none fixed p-4 bg-[#FFF7EB]/70 border border-black/10 rounded-3xl transform-gpu ${
         side === "left" ? "left-4" : "right-8"
       } z-1 ${className}`}
       style={{
