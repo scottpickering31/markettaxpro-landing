@@ -253,7 +253,7 @@ export default function Page() {
           </p>
           <div className="mt-6 flex items-center justify-center gap-3">
             <Button className="px-6 h-12" asChild>
-              <Link href="/">Get Started Free</Link>
+              <Link href="https://app.markettaxpro.com/">Get Started Free</Link>
             </Button>
             <Button variant="outline" className="px-6 h-12" asChild>
               <Link href="/features">Explore Features</Link>
