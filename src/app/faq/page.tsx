@@ -2,6 +2,7 @@ import Footer from "@/components/sections/Footer";
 import Header from "@/components/sections/Header";
 import { Button } from "@/components/ui/button";
 import { BlueGradient } from "@/styles/blue-gradient";
+import Link from "next/link";
 import React from "react";
 
 const faqs = [
@@ -84,10 +85,14 @@ export default function FAQPage() {
           </p>
 
           <div className="mt-6 flex items-center justify-center gap-3">
-            <Button variant="outline" className="px-6 h-12">
-              Contact Support
-            </Button>
-            <Button className="px-6 h-12">Get Started Free</Button>
+            <Link href="https://app.markettaxpro.com/">
+              <Button className="px-6 h-12">Get Started Free</Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="outline" className="px-6 h-12">
+                Contact Support
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

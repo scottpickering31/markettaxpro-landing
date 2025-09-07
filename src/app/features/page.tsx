@@ -88,7 +88,7 @@ export default function Page() {
             </Link>
           </Button>
           <Button variant="outline" className="px-6 h-12" asChild>
-            <Link href="#automations">See what’s inside</Link>
+            <Link href="/pricing">See what’s inside</Link>
           </Button>
         </div>
       </section>
